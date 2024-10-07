@@ -2,7 +2,7 @@
 GET http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/allproducts
 
 ###
-GET http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/product/7456456
+GET http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/product/ads
 
 ###
 GET http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/products/MEATS
@@ -12,10 +12,8 @@ POST http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/addproduct
 Content-Type: Application/json
 
 {
-"id":5,
-"name": "Apelsin",
-"category": "FRUITS",
-"rating": 9
-
-
+  "id": 1,
+  "name": "",
+  "category": "FRUITS",
+  "rating": 9
 }
