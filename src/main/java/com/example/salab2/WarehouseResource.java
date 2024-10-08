@@ -80,7 +80,7 @@ public class WarehouseResource {
     }
 
     @GET
-    @Path("/products/categorys/{category}")
+    @Path("/products/categories/{category}")
     public Response getProductByCategory(@PathParam("category") @ValidCategory String category) {
         logger.info("Get products with category {}", category);
         Category categoryEnum = Category.valueOf(category.toUpperCase());
