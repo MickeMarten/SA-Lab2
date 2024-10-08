@@ -53,12 +53,15 @@ public class WarehouseResource {
         List<Product> allProducts = warehouseService.getAllProducts();
         if (allProducts.isEmpty()) {
             logger.error("No products in the warehouse");
-            return Response.status(Response.Status.NO_CONTENT)
-                    .entity("No products in the warehouse")
+            return Response.ok()
+                    .header("Content-Size", allProducts.size())
+                    .entity(allProducts)
                     .build();
         }
         logger.info("All products returned");
-        return Response.ok(allProducts).build();
+        return Response.ok()
+                .header("Content-Size",allProducts.size())
+                .entity(allProducts).build();
     }
 
     @GET
@@ -77,7 +80,7 @@ public class WarehouseResource {
     }
 
     @GET
-    @Path("/products/{category}")
+    @Path("/products/categorys/{category}")
     public Response getProductByCategory(@PathParam("category") @ValidCategory String category) {
         logger.info("Get products with category {}", category);
         Category categoryEnum = Category.valueOf(category.toUpperCase());
@@ -89,8 +92,8 @@ public class WarehouseResource {
 
         if (filteredProducts.isEmpty()) {
             logger.error("No products in the warehouse with category {}", category);
-            return Response.status(Response.Status.NOT_FOUND)
-                    .entity("No products in the warehouse with category " + category)
+            return Response.ok()
+                    .entity(filteredProducts)
                     .build();
         }
         logger.info("Products with category {} returned", category);
