@@ -5,7 +5,7 @@ GET http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/allproducts
 GET http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/product/1
 
 ###
-GET http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/products/categories/MEATS
+GET http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/products/categories/MEAT
 
 ###
 POST http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/addproduct

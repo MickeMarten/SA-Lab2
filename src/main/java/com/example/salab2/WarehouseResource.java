@@ -1,5 +1,4 @@
 package com.example.salab2;
-
 import entities.Category;
 import entities.Product;
 import jakarta.annotation.PostConstruct;
@@ -8,15 +7,11 @@ import jakarta.validation.Valid;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import jakarta.ws.rs.ext.ExceptionMapper;
-import jakarta.ws.rs.ext.Provider;
 import service.WarehouseService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import validate.ValidId;
 import validate.ValidCategory;
-
-
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;

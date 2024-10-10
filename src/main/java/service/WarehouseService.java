@@ -3,7 +3,6 @@ package service;
 import entities.Category;
 import entities.Product;
 import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.validation.constraints.NotNull;
 
 import java.util.*;
 import java.time.LocalDate;
