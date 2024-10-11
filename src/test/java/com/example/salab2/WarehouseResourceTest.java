@@ -1,9 +1,6 @@
 package com.example.salab2;
 
-import entities.Product;
 import org.junit.jupiter.api.Test;
-
-
 import service.WarehouseService;
 import org.jboss.resteasy.mock.MockDispatcherFactory;
 import org.jboss.resteasy.mock.MockHttpRequest;

@@ -24,7 +24,7 @@ public class WarehouseService {
     }
 
     public void addProductForTest() {
-        products.add(new Product(1, "Apelsin", Category.FRUITS, 5, LocalDate.of(2024, 12, 30), LocalDate.of(2024, 12, 30)));
+        products.add(new Product(1, "Apelsin", Category.FRUITS, 5, LocalDate.of(2024, 12, 30), null));
         products.add(new Product(2, "Banan", Category.FRUITS, 1, LocalDate.of(2023, 8, 25), LocalDate.of(2024, 2, 23)));
         products.add(new Product(3, "Kyckling", Category.MEAT, 9, LocalDate.of(2024, 11, 22), LocalDate.of(2024, 3, 11)));
         products.add(new Product(5, "Pepsi", Category.DRINK, 6, LocalDate.of(2023, 6, 12), LocalDate.of(2024, 9, 2)));

@@ -25,6 +25,11 @@ public record Product(
         LocalDate createdAt,
 
         LocalDate modifiedAt) {
+        public Product {
+                if (modifiedAt == null) {
+                        modifiedAt = createdAt;
+                }
+        }
 
 
 }

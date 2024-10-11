@@ -32,10 +32,6 @@ public class WarehouseResource {
     public WarehouseResource() {
     }
 
-    @PostConstruct
-    public void init() {
-        warehouseService.addProductForTest();
-    }
 
     @Inject
     public WarehouseResource(WarehouseService warehouseService) {
