@@ -7,7 +7,6 @@ import jakarta.validation.constraints.Size;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 @NotNull(message = "Category cannot be null")
-@Size(min = 2, message = "Category name must be at least 2 characters")
 @Constraint(validatedBy = {})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ValidCategory {

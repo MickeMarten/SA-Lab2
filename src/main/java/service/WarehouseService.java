@@ -39,8 +39,6 @@ public class WarehouseService {
         return Collections.unmodifiableList(products);
     }
 
-    ;
-
 
     public Optional<Product> getProductById(int id) {
 

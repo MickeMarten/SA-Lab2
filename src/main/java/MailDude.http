@@ -5,7 +5,7 @@ GET http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/allproducts
 GET http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/product/1
 
 ###
-GET http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/products/categories/MEAT
+GET http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/products/categories/FRUITS
 
 ###
 POST http://localhost:8080/SA-Lab2-1.0-SNAPSHOT/api/warehouse/addproduct
@@ -13,7 +13,7 @@ Content-Type: Application/json
 
 {
   "id": 1,
-  "name": "ll",
+  "name": "Banan",
   "category": "FRUITS",
   "rating": 9
 }

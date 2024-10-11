@@ -1,4 +1,5 @@
 package com.example.salab2;
+
 import entities.Category;
 import entities.Product;
 import jakarta.annotation.PostConstruct;
@@ -12,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import validate.ValidId;
 import validate.ValidCategory;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -55,7 +57,7 @@ public class WarehouseResource {
         }
         logger.info("All products returned");
         return Response.ok()
-                .header("Content-Size",allProducts.size())
+                .header("Content-Size", allProducts.size())
                 .entity(allProducts).build();
     }
 
